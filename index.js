@@ -14,7 +14,7 @@ class ChessBoard {
     this.size = 8;
   }
   inBounds(x, y) {
-    return x > 0 && x < this.size && y > 0 && y < this.size;
+    return x >= 0 && x < this.size && y >= 0 && y < this.size;
   }
   neighbors(position) {
     let [x, y] = position;
